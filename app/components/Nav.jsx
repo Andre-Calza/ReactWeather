@@ -4,7 +4,7 @@ var {Link, IndexLink} = require('react-router');
 var Nav = React.createClass({
   onSearch: function(e){
     e.preventDefault();
-    alert('Not yet wired up!');
+    alert('Calma jovem, uma coisa de cada vez!');
   },
   render: function(){
     return(
@@ -13,13 +13,13 @@ var Nav = React.createClass({
           <ul className="menu">
             <li className="menu-text">React Weather App</li>
             <li>
-              <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
+              <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Obter temperatura</IndexLink>
             </li>
             <li>
-                <Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>About</Link>
+                <Link to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Sobre</Link>
             </li>
             <li>
-              <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</Link>
+              <Link to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Exemplos</Link>
             </li>
           </ul>
         </div>
@@ -27,10 +27,10 @@ var Nav = React.createClass({
           <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
-                <input type="search" placeholder="Search weather" />
+                <input type="search" placeholder="Digite o nome da cidade" />
               </li>
               <li>
-                <input type="submit" className="button" value="Get Weather" />
+                <input type="submit" className="button" value="Obter temperatura" />
               </li>
             </ul>
           </form>

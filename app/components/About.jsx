@@ -3,7 +3,7 @@ var React = require('react');
 var About = (props) => {
   return(
     <div>
-      <h1 className="text-center">Sobre</h1>
+      <h1 className="text-center page-hifen">Sobre</h1>
       <p>Esta é uma aplicação de temperatura construída com o React. Eu construí isso para o curso "Complete React Web App Developer Course" do Udemy</p>
       <p>Aqui estão algumas das ferramentas que utilizei:</p>
       <ul>
